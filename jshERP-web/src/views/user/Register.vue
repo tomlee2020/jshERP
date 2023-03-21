@@ -68,14 +68,14 @@
         <router-link class="login" :to="{ name: 'login' }">使用已有租户登录</router-link>
       </a-form-item>
 
-      <div class="login-copyright">
+      <!-- <div class="login-copyright">
         <a-row>
           <a-col>
             © 2015-2030 {{systemTitle}} - Powered By
             <a style="color:#00458a;" :href="systemUrl" target="_blank">官方网站</a>
           </a-col>
         </a-row>
-      </div>
+      </div> -->
 
       <div v-if="showWeixinFlag" style="text-align: center; padding-top: 20px;">
         <img src="/static/weixin.jpg" style="width:160px" />

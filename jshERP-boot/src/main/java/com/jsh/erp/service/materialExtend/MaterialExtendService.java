@@ -289,6 +289,9 @@ public class MaterialExtendService {
 
     @Transactional(value = "transactionManager", rollbackFor = Exception.class)
     public int batchDeleteMaterialExtendByIds(String ids, HttpServletRequest request) throws Exception{
+        if(org.springframework.util.StringUtils.isEmpty(ids)){
+            return 0;
+        }
         String [] idArray=ids.split(",");
         int result = 0;
         try{

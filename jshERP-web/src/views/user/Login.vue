@@ -45,15 +45,6 @@
         </a-button>
       </a-form-item>
 
-      <div class="login-copyright">
-        <a-row>
-          <a-col>
-            © 2015-2030 {{systemTitle}} - Powered By
-            <a style="color:#00458a;" :href="systemUrl" target="_blank">官方网站</a>
-          </a-col>
-        </a-row>
-      </div>
-
       <div v-if="showWeixinFlag" style="text-align: center; padding-top: 20px;">
         <img src="/static/weixin.jpg" style="width:160px" />
         <div style="font-size:16px;padding-top:10px;font-weight:bold">欢迎【扫一扫】<br/>{{systemTitle}}微信小程序</div>
